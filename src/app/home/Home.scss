@@ -1,0 +1,66 @@
+.main {
+    width: 100vw;
+}
+
+.home {
+    background-color: #eee;
+    padding: calc(2rem + 5vw) calc(3rem + 5vw);
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &__cta {
+        align-self: flex-start;
+        background-size: 125%;
+        background-repeat: no-repeat;
+        background-position: left;
+        border-radius: 1rem;
+        color: #eee;
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 3rem;
+        width: 50%;
+        min-height: 20rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: .8rem;
+    }
+
+    &__input-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: .8rem;
+    }
+
+    &__input {
+        border: none;
+        padding: 1.8rem;
+        width: 60%;
+        transition: all .3s ease-in-out;
+    }
+
+    &__input:focus {
+        outline: 2px solid red;
+    }
+
+    &__sublabel {
+        font-size: 1.4rem;
+        color: #B8B8B8;
+        font-weight: medium;
+    }
+
+    &__img {
+        align-self: flex-end;
+        width: 50%;
+    }
+}
