@@ -1,0 +1,147 @@
+.shows {
+    width: 100vw;
+    color: #fff;
+
+    &__img {
+        width: 120%;
+        height: 60vh;
+        opacity: .7;
+    }
+
+    &__collections {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__collection {
+        color: #eee;
+        padding: 2rem 4rem;
+    }
+
+    &__category {
+        font-size: 1.4rem;
+    }
+
+    &__cards-and-info-cont {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__show-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__category,
+    &__show-cards {
+        margin-bottom: 2.2rem;
+    }
+
+    &__card {
+        width: 32rem;
+        height: 20rem;
+        // margin-right: .2rem;
+        cursor: pointer;
+        transition: all .3s ease-in;
+
+        &:not(:last-child) {
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__card:hover {
+        transform: scaleX(1.1);
+    }
+
+    &__card-img {
+        width: 100%;
+        max-width: 15rem;
+        height: auto;
+        max-height: 100%;
+    }
+
+    &__hero {
+        height: 50vh;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    &__show {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    &__show-info {
+        border: 1px solid #eee;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 5rem 2rem;
+        width: 50%;
+        position: relative;
+    }
+
+    &__show-descr {
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        max-width: 60%;
+    }
+
+    &__info-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    &__like-img {
+        transition: all .3 ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(1);
+        }
+    }
+    
+    &__like-quantity {
+        font-size: 2.3rem;
+        font-weight: 200;
+        margin-right: 2rem;
+    }
+
+    &__categories {
+        color: #FF9B9B;
+        font-family: 'Roboto Condensed', 'Roboto', Arial, Helvetica, sans-serif;
+        font-size: smaller;
+        font-size: 1.7rem;
+    }
+
+    &__btn-group > .btn {
+        min-width: 9rem;
+    }
+
+    &__show-close {
+        width: 3rem;
+        height: 3rem;
+        transition: all .3s ease-in-out;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        cursor: pointer;
+    }
+
+    &__show-close:hover {
+        transform: rotate(180deg);
+    }
+
+    &__show-img {
+        width: 25%;
+    }
+}
